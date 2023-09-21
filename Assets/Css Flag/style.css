@@ -1,0 +1,75 @@
+div{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+}
+
+#flag{
+    width: 900px;
+    height: 250px;
+    position: relative;
+    
+    
+}
+
+
+#flag>div{
+    background-color: rgb(0, 45, 98);
+    width: 450px;
+    height: 250px;
+        
+
+}
+
+#flag .second{
+    background-color: rgb(206, 17, 38);
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    left: 560px;
+    top: 0%;
+}
+
+#flag2{
+    width: 900px;
+    height: 250px;
+    position: relative;
+    top: 18%;
+    
+}
+
+
+#flag2>div{
+    background-color: rgb(0, 45, 98);
+    width: 450px;
+    height: 250px;
+    top: 6%;
+
+}
+
+#flag2 .fourth{
+    background-color: rgb(206, 17, 38);
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    left: 560px;
+    top: 6%;
+}
+
+.img{
+background-color: white;
+width: 100px;
+height: 30px;
+margin-left: 50%;
+position: absolute;
+top: 43%;
+left:200px;
+
+}
+
+img{
+    width: 99px;
+    height: 99px;
+}

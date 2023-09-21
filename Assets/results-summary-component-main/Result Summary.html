@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: whitesmoke;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container{
+      width: 670px;
+      height: 548px;
+      border-radius: 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: white;
+      gap:30px;
+      font-family: 'Caveat', cursive;
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .column1{
+      background-color: hsl(252, 100%, 67%);
+      border-radius: 35px;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      padding: 40px;
+    }
+
+    .circle{
+      background-color: hsla(256, 72%, 46%, 1);
+      border-radius: 50%;
+      width:200px;
+      height: 200px;
+      margin-left: 15px;
+      margin-top: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .writing{ 
+      position: absolute;
+      top: 45px;
+      bottom: 0px;
+      left: 65px;
+      line-height: 0%;
+    }
+
+    .remark{
+      position: absolute;
+      top:210px;
+      text-align: center;
+    }
+
+    .column2{
+      text-align: left;
+      margin-top: 39px;
+    }
+
+    .flexbox{
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:15px;
+    }
+
+    span{
+      text-align: right;
+      margin-left: 150px;
+      color: black;
+      font-weight: 300;
+    }
+
+    .red{
+      width:328px;
+      background-color:hsl(0, 100%, 90%);
+      border-radius: 19px;
+      margin-right: 900px;
+      text-align: center;
+      color:hsl(0, 100%, 67%);
+    }
+
+    .yellow{
+      width:328px;
+      background-color:hsl(39, 100%, 56%);
+      border-radius: 19px;
+      margin-right: 900px;
+      text-align: center;
+      color: hsl(39, 100%, 90%);
+    }
+      .green{
+      width:328px;
+      background-color:lightgreen;
+      border-radius: 19px;
+      margin-right: 900px;
+      text-align: center;
+      color: darkgreen;
+    }
+
+    .Blue{
+      width:328px;
+      background-color:hsl(234, 85%, 90%);
+      border-radius: 19px;
+      margin-right: 900px;
+      text-align: center;
+      color:  hsl(234, 85%, 45%);
+    }
+
+    .Continue{
+      width: 328px;
+      border: 0;
+      line-height: 3.3;
+      padding: 0 20px;
+      font-size:18px;
+      font-weight: 300;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 30px;
+      background-color: hsl(224, 30%, 27%);
+    }
+
+    .Continue:hover {
+     background-color: rgba(255, 0, 0, 1);
+   }
+
+@media (max-width: 768px) {
+  .grid-container {
+    width: 100%; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    height: auto; 
+  }
+
+  .column1 {
+    padding: 20px; 
+  }
+
+  .circle {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .remark {
+    top: 10px; 
+    bottom: 20px;
+  }
+
+  .column2 {
+    margin-top: 20px;
+  }
+
+  .red, .yellow, .green, .Blue {
+    width: 100%; 
+    margin-right: 0; 
+  }
+
+  span {
+    margin-left: 0; 
+    text-align: center; 
+  }
+
+  .Continue {
+    margin-right: auto; 
+    margin-left: auto;
+  }
+}
+
+
+
+   
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hanken+Grotesk:ital,wght@0,700;1,500;1,800&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="column1">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <div class="writing">
+          <h1 style="font-size: 4rem;font-family: 'Times New Roman', Times, serif;">76</h1>
+          <p style="font-size: 18ox; color: hsl(224, 30%, 27%);">of 100</p>
+          </div>
+          <div class="remark">
+            <h2>Great</h2>
+            <p style="font-size: 18px; color:hsl(224, 30%, 27%);">You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column2">
+        <h3>Summary</h3>
+      <div class="flexbox">
+        <div class="red">
+          <p>Reaction <span>80 / 100</span></p>
+        </div>
+        <div class="yellow">
+          <p>Memory <span>80 / 100</span></p>
+        </div>
+        <div class="green">
+          <p>Verbal &nbsp;&nbsp;&nbsp; <span>80 / 100</span></p>
+        </div>
+        <div class="Blue">
+          <p>Visual &nbsp;&nbsp;&nbsp; <span>80 / 100</span></span></p>
+        </div>
+      </div><br/><br/>
+       <button class="Continue">
+        Continue
+       </button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Seal Udokang</a>.
+  </div>
+</body>
+</html>
